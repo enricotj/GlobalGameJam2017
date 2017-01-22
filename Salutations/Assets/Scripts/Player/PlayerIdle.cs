@@ -22,7 +22,7 @@ namespace Assets.Scripts.Abstract_Actor_Components.States
         {
             Rigidbody2D rigidBody = actor.rigidBody;
             Vector2 movementIntent = actor.MovementIntent;
-            if (movementIntent.magnitude > 0)
+            if (Mathf.Abs(movementIntent.x) > 0)
             {
                 actor.animator.SetBool("Walking", true);
             }

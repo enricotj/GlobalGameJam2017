@@ -93,7 +93,7 @@ public class ActorComponent : MonoBehaviour {
     #region Logic Control
     public virtual void ResetAnimatorParameters()
     {
-
+        animator.ResetTrigger("Wave");
     }
 
     private void CheckStateTransition()
